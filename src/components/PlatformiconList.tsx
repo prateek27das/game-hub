@@ -18,10 +18,10 @@ interface Props {
   platforms: Platform[];
 }
 
-const PlatformIconList = ({ platforms }: Props) => {
+const PlatformiconList = ({ platforms }: Props) => {
   const iconMap: { [key: string]: IconType } = {
     pc: FaWindows,
-    playstation: FaPlaystation,
+    FaPlaystation: FaPlaystation,
     xbox: FaXbox,
     nintendo: SiNintendo,
     mac: FaApple,
@@ -30,7 +30,6 @@ const PlatformIconList = ({ platforms }: Props) => {
     ios: MdPhoneIphone,
     web: BsGlobe,
   };
-
   return (
     <HStack marginY={1}>
       {platforms.map((platform) => (
@@ -40,4 +39,4 @@ const PlatformIconList = ({ platforms }: Props) => {
   );
 };
 
-export default PlatformIconList;
+export default PlatformiconList;

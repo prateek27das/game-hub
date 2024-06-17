@@ -12,7 +12,11 @@ import {
 } from "@chakra-ui/react";
 import getCropperImageUrl from "../services/image-url";
 
-function GenreList() {
+interface Props {
+  onSelectGenre: (genre: Genre) => void;
+}
+
+const GenreList = ({ onSelectGenre }: Props) => {
   const { data, isLoading, error } = useData<Genre>("/genres");
 
   if (isLoading) return <Spinner />;
@@ -29,7 +33,7 @@ function GenreList() {
               src={getCropperImageUrl(genre.image_background)}
             />
             <Button
-              onClick={() => console.log(genre)}
+              onClick={() => onSelectGenre(genre)}
               fontSize="lg"
               variant="link"
             >
@@ -40,6 +44,6 @@ function GenreList() {
       ))}
     </List>
   );
-}
+};
 
 export default GenreList;
