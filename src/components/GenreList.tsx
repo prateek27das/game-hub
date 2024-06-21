@@ -16,7 +16,7 @@ import getCropperImageUrl from "../services/image-url";
 interface Props {
   onSelectGenre: (genre: Genre) => void;
 }
-
+//selectedGenre,
 const GenreList = ({ onSelectGenre }: Props) => {
   // const { data, isLoading, error } = useData<Genre>('/genres');
   const { data, isLoading, error } = useGenres();
