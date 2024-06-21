@@ -3,11 +3,13 @@ import React from "react";
 import logo from "../assets/flower.png";
 import { px } from "framer-motion";
 import ColorModeSwitch from "./ColorModeSwitch";
+import SearchInput from "./SearchInput";
 
 function NavBar() {
   return (
-    <HStack justifyContent="space-between" padding="10px">
+    <HStack padding="10px">
       <Image src={logo} boxSize="60px" />
+      <SearchInput />
       <ColorModeSwitch />
     </HStack>
   );
