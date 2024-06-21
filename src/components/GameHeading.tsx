@@ -12,7 +12,7 @@ function GameHeading({ gameQuery }: Props) {
   } Games`;
 
   return (
-    <Heading as="h1" marginY={5} fontSize="5xl">
+    <Heading as="h1" marginY={5} fontSize={{ sm: 10, md: 50, lg: 50, xl: 60 }}>
       {heading}
     </Heading>
   );
