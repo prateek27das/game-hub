@@ -15,6 +15,7 @@ import getCropperImageUrl from "../services/image-url";
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }
 //selectedGenre,
 const GenreList = ({ onSelectGenre }: Props) => {
