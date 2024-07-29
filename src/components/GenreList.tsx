@@ -1,6 +1,5 @@
 import React from "react";
 import useGenres, { Genre } from "../hooks/useGenres";
-import useData from "../hooks/useData";
 import {
   Button,
   HStack,
@@ -31,7 +30,7 @@ const GenreList = ({ onSelectGenre }: Props) => {
         Genres
       </Heading>
       <List>
-        {data.map((genre) => (
+        {data?.results.map((genre) => (
           <ListItem key={genre.id} paddingY="5px">
             <HStack>
               <Image
