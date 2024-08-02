@@ -4,6 +4,8 @@ import { Card, CardBody, HStack, Heading, Image, Text } from "@chakra-ui/react";
 import PlatformiconList from "./PlatformiconList";
 import CriticScore from "./CriticScore";
 import getCropperImageUrl from "../services/image-url";
+import { Link } from "react-router-dom";
+import { transform } from "framer-motion";
 
 interface Props {
   game: Game;
@@ -20,7 +22,9 @@ function GameCard({ game }: Props) {
           />
           <CriticScore score={game.metacritic} />
         </HStack>
-        <Heading fontSize="2xl">{game.name}</Heading>
+        <Heading fontSize="2xl">
+          <Link to={"/games/" + game.slug}>{game.name}</Link>
+        </Heading>
       </CardBody>
     </Card>
   );
