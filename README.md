@@ -4,6 +4,12 @@ GameHub is a web application that allows users to search for games, filter them 
 
 Visit the website: [GameHub](http://your-website-link.com)
 
+## Screenshot
+
+| ![GameHub Screenshot](https://drive.google.com/uc?id=1EEhfp8TgfFnnMgQUhMFnvd6ADUYV20Cw) |
+| --- |
+
+
 ## Features
 
 - **Search Games:** Easily search for your favorite games by name.
