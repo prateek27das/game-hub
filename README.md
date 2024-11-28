@@ -2,6 +2,8 @@
 
 GameHub is a web application that allows users to search for games, filter them by genres and platforms, and sort them based on various criteria. It's an easy-to-use platform for discovering new and popular games, with more exciting features coming soon.
 
+Visit the website: [GameHub](http://your-website-link.com)
+
 ## Features
 
 - **Search Games:** Easily search for your favorite games by name.
